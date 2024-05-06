@@ -1,0 +1,70 @@
+// add styles for "budget categories"
+.subHeading {
+    h3 {
+        color: var(--color-gray-700);
+    }
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    .title {
+        font-size: 0.65rem;
+    }
+    p {
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+    .flex-item:first-child h3,
+    .flex-item:first-child p {
+        text-align: left;
+    }
+    .flex-item h3,
+    .flex-item p {
+        text-align: center;
+    }
+    .flex-item:last-child h3,
+    .flex-item:last-child p {
+        text-align: right;
+    }
+}
+.categories {
+    margin-bottom: 1rem;
+}
+.formattedForm {
+    input {
+        width: 100%;
+    }
+    h3 {
+        margin-bottom: 2rem;
+    }
+    div {
+        margin-block: 0.5rem;
+    }
+    label {
+        display: block;
+        font-size: 0.85rem;
+    }
+    .iconRadios {
+        div {
+            margin: 0;
+            font-size: 0.85rem;
+        }
+        input {
+            display: none;
+        }
+        input:checked + label {
+            border-color: var(--color-brand-dark);
+            background-color: var(--color-blue-50);
+        }
+        label {
+            display: inline-block;
+            border: 1px solid var(--color-gray-200);
+            padding: 0.5rem;
+            font-size: 16px;
+            margin-right: 0.25rem;
+            cursor: pointer;
+            background-color: var(--color-gray-200);
+        }
+    }
+    .spaced {
+        gap: 0.5rem;
+    }
+}

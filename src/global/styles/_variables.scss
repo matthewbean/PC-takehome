@@ -1,0 +1,15 @@
+:root {
+  --shadow-color: 0deg 0% 65%;
+  --shadow-elevation-low: 
+    -0.2px 0.4px 0.4px hsl(var(--shadow-color) / 40%),
+    -0.3px 0.6px 0.6px -2px hsl(var(--shadow-color) / 30%),
+    -0.8px 1.5px 1.5px -4px hsl(var(--shadow-color) / 20%);
+  --shadow-elevation-medium: 
+    -0.2px 0.4px 0.4px hsl(var(--shadow-color) / 35%),
+    -0.4px 0.8px 0.8px -1px hsl(var(--shadow-color) / 30%),
+    -0.9px 1.6px 1.7px -2px hsl(var(--shadow-color) / 25%),
+    -2px 3.7px 3.8px -3px hsl(var(--shadow-color) / 20%),
+    -4.2px 7.7px 7.9px -4px hsl(var(--shadow-color) / 15%);
+  --input-border-radius: 4px;
+  --input-border-color: var(--color-gray-300);
+}

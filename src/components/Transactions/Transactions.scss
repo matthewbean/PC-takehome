@@ -1,0 +1,71 @@
+// add styles for "transactions"
+.transactions {
+  .heading {
+    h2 {
+      font-size: 1rem;
+    }
+    p {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+  }
+  .card {
+    background: #fff;
+    margin-bottom: 0.75rem;
+    border: 1px solid var(--color-gray-200);
+    border-radius: 4px;
+    box-shadow: var(--shadow-elevation-low);
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 60px 1fr 1fr 90px;
+    grid-template-areas:
+      "icon description description amount"
+      "icon category category date";
+    .transactions-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      grid-area: icon;
+      font-size: 2.25rem;
+      padding: 0.5rem;
+      background-color: var(--color-blue-100);
+    }
+    .transactions-description {
+      padding: 1rem 0.5rem 0;
+      font-weight: 500;
+      grid-area: description;
+      font-size: 1.25rem;
+    }
+
+    .transactions-amount {
+      display: flex;
+      justify-content: end;
+      margin: 1.25rem 0.5rem;
+      margin-bottom: 0;
+      grid-area: amount;
+    }
+    .transactions-category {
+      grid-area: category;
+      padding: 0 0.5rem;
+      font-size: 0.75rem;
+    }
+    .transactions-date {
+      grid-area: date;
+      display: flex;
+      align-items: end;
+      justify-content: end;
+      margin-bottom: 0.5rem;
+      font-weight: 300;
+      text-align: right;
+      margin-right: 0.5rem;
+      font-size: 0.75rem;
+    }
+    .positive {
+      color: var(--color-green-600);
+    }
+    .negative {
+      color: var(--color-red-600);
+    }
+  }
+}
